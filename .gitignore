@@ -1,0 +1,21 @@
+# Allowlist only application and deployment files for this public repository.
+/*
+!/.gitignore
+!/README.md
+!/requirements.txt
+!/app.py
+!/.streamlit/
+/.streamlit/*
+!/.streamlit/config.toml
+
+# Python virtual environments & cache
+.venv/
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+# Security & Secrets (Blocks API keys, passwords, and tokens)
+.streamlit/secrets.toml
+.env
+*.pem
